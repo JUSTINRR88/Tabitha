@@ -1,0 +1,949 @@
+/* =========================================================
+   MINISTERIO TABITHA
+   CSS COMPLETO
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+    --azul-oscuro: #173b5d;
+    --azul: #2582bd;
+    --azul-claro: #e7f4fc;
+
+    --blanco: #ffffff;
+    --fondo: #f5f9fc;
+
+    --texto: #334155;
+    --texto-claro: #64748b;
+
+    --sombra: 0 10px 30px rgba(25, 55, 85, .10);
+    --sombra-grande: 0 15px 40px rgba(23, 59, 93, .16);
+
+    --radio: 20px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: var(--fondo);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    overflow-x: hidden;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.Todo {
+    width: min(1180px, 92%);
+    margin: auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    min-height: 72vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background:
+        linear-gradient(
+            rgba(24, 61, 100, .82),
+            rgba(38, 119, 178, .82)
+        ),
+        url("../IMG/1.jpeg") center / cover no-repeat;
+
+    color: white;
+}
+
+
+.hero-contenido {
+    width: 100%;
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+.etiqueta {
+    display: inline-block;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    font-size: .85rem;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+
+    font-size: clamp(2.5rem, 6vw, 5rem);
+
+    line-height: 1.1;
+
+    margin: 18px 0;
+}
+
+
+.hero p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BOTÓN HERO
+========================================================= */
+
+.boton {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 13px 28px;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #1768a1;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+
+.boton:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .20);
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+.seccion {
+
+    padding: 90px 0;
+}
+
+
+/* =========================================================
+   TÍTULOS
+========================================================= */
+
+.titulo-seccion {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 45px;
+}
+
+
+.titulo-seccion span {
+
+    display: inline-block;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    font-size: .85rem;
+
+    color: var(--azul);
+}
+
+
+.titulo-seccion h2 {
+
+    font-size: clamp(2rem, 4vw, 3.2rem);
+
+    line-height: 1.2;
+
+    margin: 8px 0 14px;
+
+    color: var(--azul-oscuro);
+}
+
+
+.titulo-seccion p {
+
+    color: var(--texto-claro);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN
+========================================================= */
+
+.descripcion {
+
+    background: var(--blanco);
+
+    padding: 38px;
+
+    border-radius: 24px;
+
+    box-shadow: var(--sombra);
+}
+
+
+.descripcion p {
+
+    color: var(--texto);
+
+    line-height: 1.8;
+
+    font-size: 1rem;
+}
+
+
+.descripcion p + p {
+
+    margin-top: 18px;
+}
+
+
+.descripcion strong {
+
+    color: var(--azul-oscuro);
+}
+
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+
+.tarjetas {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin-top: 28px;
+}
+
+
+.tarjeta {
+
+    background: var(--blanco);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: var(--sombra);
+
+    transition: .3s;
+}
+
+
+.tarjeta:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: var(--sombra-grande);
+}
+
+
+.tarjeta h3 {
+
+    color: var(--azul-oscuro);
+
+    margin-bottom: 10px;
+
+    font-size: 1.3rem;
+}
+
+
+.tarjeta p {
+
+    color: var(--texto-claro);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ICONOS
+========================================================= */
+
+.icono {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--azul-claro);
+
+    color: #1877b2;
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   MISIÓN Y VISIÓN
+========================================================= */
+
+.mision-vision {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.bloque-mv {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--azul-oscuro),
+            var(--azul)
+        );
+
+    color: white;
+
+    padding: 42px;
+
+    border-radius: 25px;
+
+    box-shadow: var(--sombra-grande);
+
+    transition: .3s;
+}
+
+
+.bloque-mv:hover {
+
+    transform: translateY(-5px);
+}
+
+
+.bloque-mv h2 {
+
+    font-size: 2rem;
+
+    margin: 12px 0;
+}
+
+
+.bloque-mv p {
+
+    line-height: 1.8;
+
+    opacity: .95;
+}
+
+
+.numero {
+
+    font-size: .8rem;
+
+    letter-spacing: 2px;
+
+    opacity: .75;
+}
+
+
+/* =========================================================
+   GALERÍA PRINCIPAL
+========================================================= */
+
+.imagenes {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    grid-auto-rows: 180px;
+
+    gap: 15px;
+}
+
+
+.imagenes img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, .14);
+
+    transition: .35s;
+
+    cursor: pointer;
+}
+
+
+.imagenes img:hover {
+
+    transform: scale(1.025);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, .20);
+}
+
+
+/* =========================================================
+   DISTRIBUCIÓN GALERÍA
+========================================================= */
+
+.imagenes img:nth-child(1) {
+
+    grid-column: span 2;
+
+    grid-row: span 2;
+}
+
+
+.imagenes img:nth-child(2) {
+
+    grid-row: span 3;
+}
+
+
+.imagenes img:nth-child(4) {
+
+    grid-column: span 2;
+
+    grid-row: span 2;
+}
+
+
+.imagenes img:nth-child(7) {
+
+    grid-column: span 2;
+
+    grid-row: span 2;
+}
+
+
+.imagenes img:nth-child(10) {
+
+    grid-column: span 2;
+}
+
+
+/* =========================================================
+   GALERÍA TABITHA
+========================================================= */
+
+.galeria-tabitha {
+
+    padding-top: 30px;
+}
+
+
+.imagenes2 {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    grid-auto-rows: 220px;
+
+    gap: 15px;
+}
+
+
+.imagenes2 img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, .14);
+
+    transition: .35s;
+
+    cursor: pointer;
+}
+
+
+.imagenes2 img:hover {
+
+    transform: scale(1.025);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, .20);
+}
+
+
+/* =========================================================
+   DISTRIBUCIÓN GALERÍA TABITHA
+========================================================= */
+
+.imagenes2 img:nth-child(1) {
+
+    grid-column: span 2;
+
+    grid-row: span 2;
+}
+
+
+.imagenes2 img:nth-child(2) {
+
+    grid-row: span 2;
+}
+
+
+.imagenes2 img:nth-child(4) {
+
+    grid-column: span 2;
+
+    grid-row: span 2;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 55px 20px;
+
+    background: var(--azul-oscuro);
+
+    color: white;
+
+    margin-top: 30px;
+}
+
+
+footer h2 {
+
+    font-size: 2rem;
+
+    margin-bottom: 12px;
+}
+
+
+footer p {
+
+    opacity: .85;
+
+    line-height: 1.7;
+}
+
+
+.copyright {
+
+    margin-top: 15px;
+
+    font-size: .85rem;
+}
+
+
+/* =========================================================
+   ANIMACIONES
+========================================================= */
+
+.hero-contenido {
+
+    animation:
+        aparecer .8s ease;
+}
+
+
+.titulo-seccion {
+
+    animation:
+        aparecer .8s ease;
+}
+
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(40px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================================
+   BARRA DE DESPLAZAMIENTO
+========================================================= */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--azul);
+
+    border-radius: 20px;
+}
+
+
+::-webkit-scrollbar-track {
+
+    background: #e5e7eb;
+}
+
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .tarjetas {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .mision-vision {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .imagenes {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .imagenes2 {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .Todo {
+
+        width: 90%;
+    }
+
+
+    .hero {
+
+        min-height: 80vh;
+
+        padding:
+            60px 20px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 2.4rem;
+    }
+
+
+    .hero p {
+
+        font-size: 1rem;
+
+        line-height: 1.6;
+    }
+
+
+    .seccion {
+
+        padding: 60px 0;
+    }
+
+
+    .descripcion {
+
+        padding: 25px;
+    }
+
+
+    .descripcion p {
+
+        font-size: .95rem;
+
+        line-height: 1.7;
+    }
+
+
+    .tarjetas {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .tarjeta {
+
+        padding: 25px;
+    }
+
+
+    .bloque-mv {
+
+        padding: 28px;
+    }
+
+
+    .bloque-mv h2 {
+
+        font-size: 1.7rem;
+    }
+
+
+    .bloque-mv p {
+
+        font-size: .95rem;
+
+        line-height: 1.7;
+    }
+
+
+    .titulo-seccion h2 {
+
+        font-size: 2rem;
+    }
+
+
+    .titulo-seccion p {
+
+        font-size: .95rem;
+    }
+
+
+    .imagenes,
+    .imagenes2 {
+
+        grid-template-columns:
+            1fr;
+
+        grid-auto-rows:
+            240px;
+    }
+
+
+    .imagenes img,
+    .imagenes2 img {
+
+        grid-column:
+            span 1 !important;
+
+        grid-row:
+            span 1 !important;
+    }
+
+
+    footer {
+
+        padding: 45px 20px;
+    }
+
+
+    footer h2 {
+
+        font-size: 1.7rem;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUEÑOS
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+
+        min-height: 85vh;
+    }
+
+
+    .hero h1 {
+
+        font-size: 1.9rem;
+    }
+
+
+    .hero p {
+
+        font-size: .9rem;
+    }
+
+
+    .etiqueta {
+
+        font-size: .72rem;
+
+        letter-spacing: 2px;
+    }
+
+
+    .boton {
+
+        padding:
+            12px 23px;
+
+        font-size:
+            .9rem;
+    }
+
+
+    .descripcion {
+
+        padding: 20px;
+    }
+
+
+    .titulo-seccion h2 {
+
+        font-size: 1.7rem;
+    }
+
+
+    .bloque-mv {
+
+        padding: 23px;
+    }
+
+
+    .bloque-mv h2 {
+
+        font-size: 1.5rem;
+    }
+
+
+    .tarjeta {
+
+        padding: 22px;
+    }
+
+
+    footer {
+
+        padding:
+            40px 15px;
+    }
+
+}
