@@ -1,5 +1,5 @@
 # Tabitha
 Pagina definitiva
 https://justinrr88.github.io/Tabitha/
-<img width="2048" height="2938" alt="i3TDYr" src="https://github.com/user-attachments/assets/1182c2ec-2365-4e33-a53e-8838321d461a" />
+<img width="370" height="370" alt="QR_Tabitha" src="https://github.com/user-attachments/assets/977c000d-6d25-4cdb-b6c7-f57970a9936f" />
 
