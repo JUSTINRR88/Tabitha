@@ -1,5 +1,5 @@
 # Tabitha
 Pagina definitiva
 https://justinrr88.github.io/Tabitha/
-<img width="1254" height="1254" alt="Escanea por un Mejor Mañana" src="https://github.com/user-attachments/assets/eaf498b6-2d57-4d26-8e34-7df41718b083" />
+<img width="1400" height="1650" alt="QR_Tabitha_Disenado_REAL" src="https://github.com/user-attachments/assets/ed3ace7d-3612-4836-a860-35f059186ced" />
 
